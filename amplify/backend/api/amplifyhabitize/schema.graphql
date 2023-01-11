@@ -1,0 +1,10 @@
+type Day @model @auth(rules: [{ allow: owner }]) {
+  id: ID!
+  date: AWSDate!
+  dayImageUrl: String
+  dayImageKey: String
+  rating: Float!
+  sleep: Float!
+  consumedCalories: Float!
+  workoutCalories: Float!
+}
